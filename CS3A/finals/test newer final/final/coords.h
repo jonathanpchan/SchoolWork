@@ -13,8 +13,10 @@ public:
     ~coords();
     int GetRow();
     int GetCol();
+    int SetRow(int r);
+    int SetCol(int c);
 
-
+    friend bool operator ==(const coords& a, const coords& b);
     friend ostream &operator <<(ostream &out, const coords &a);
 private:
     int row;

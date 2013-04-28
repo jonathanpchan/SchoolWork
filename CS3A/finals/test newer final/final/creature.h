@@ -10,37 +10,58 @@ class creature
     public:
         creature();
         creature(int x, int y);
+        virtual ~creature();
         virtual void Move(grid* g) = 0;
         virtual void Breed(grid* g) = 0;
         virtual void Starve(grid* g) = 0;
-        virtual bool HasMoved();
+
+        bool HasMoved();
         void SetMoved();
         void ResetMove();
 
+        void DisplayInfo();
 
         char getSpecies();
-
-        coords AvailablePoints(grid* g);
-
-
+        void SetSpecies(char s);
 
         int Row();
         int Col();
+        void SetRow(int ROW);
+        void SetCol(int COL);
+
+        coords AvailablePoints(grid* g);
+        coords AvailableFood(grid *g, char f);
 
         friend ostream &operator <<(ostream& out, const creature& a);//outputs the list
 
 
+        int GetKillCount();
+        int GetBabyCount();
+        int GetAliveCount();
 
 
-        int hungerCount;
-        int breedCount;
-        char face;
+
+
+    protected:
 
         int row;
         int col;
-        coords location;
-
+        int hungerCount;
+        int breedCount;
+        int noBabyCount;
+        int killCount;
+        int babyCount;
+        int aliveCount;
         bool moved;
+        char face;
+
+
+    private:
+
+
+
+
+
 
 
 };

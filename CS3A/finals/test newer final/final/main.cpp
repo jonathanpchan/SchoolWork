@@ -1,28 +1,28 @@
 #include <iostream>
 #include <time.h>
-#include <Windows.h>
+//#include <Windows.h>
 #include "creature.h"
 #include "predator.h"
 #include "prey.h"
 #include "grid.h"
 #include "display.h"
+#include "wall.h"
+#include "hunter.h"
 
 
 int main()
 {
     srand(time(NULL));
 
-    bool running = true;
     grid* g = new grid;
     display test;
 
     g->Populate();
-//    cout << "INITIAL GRID\n";
-//    cout << *g << endl;
-//    cout << "END INITIAL GRID\n";
+    cout << "Press Enter To Create Grid\n";
     cin.get();
 
     test.show(g);
+}
 
 //        int i=0;
 //        while(running)
@@ -42,7 +42,6 @@ int main()
             //cin.get();
 //        }
 
-}
 
 
 

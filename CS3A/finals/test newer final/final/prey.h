@@ -9,11 +9,16 @@ class prey:public creature
     public:
         prey();
         prey(int x, int y);
+        ~prey();
         void Move(grid* g);
         void Breed(grid* g);
         void Starve(grid* g);
 
-        bool HasMoved();
+        int getPreyCount();
+
+    private:
+        int static preyCount;
+
 };
 
 #endif // PREY_H

@@ -26,9 +26,7 @@ coords &coords::operator =(const coords &a)
     return *this;
 }
 
-coords::~coords()
-{
-}
+coords::~coords(){}
 
 int coords::GetRow()
 {

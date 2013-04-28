@@ -21,7 +21,9 @@ SOURCES += main.cpp \
     predator.cpp \
     grid.cpp \
     coords.cpp \
-    display.cpp
+    display.cpp \
+    wall.cpp \
+    hunter.cpp
 
 HEADERS += \
     creature.h \
@@ -29,6 +31,8 @@ HEADERS += \
     predator.h \
     grid.h \
     coords.h \
-    display.h
+    display.h \
+    wall.h \
+    hunter.h
 
 LIBS += -lGLFW -lopengl32 -lglu32 -luser32
