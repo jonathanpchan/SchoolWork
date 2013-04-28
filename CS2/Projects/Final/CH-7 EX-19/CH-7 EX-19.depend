@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1323949710 source:e:\cs2\final\ch-7 ex-19\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1319131608 source:f:\cs2\projects\test\main.cpp
+	<iostream>
+	<iomanip>
+
+1319779252 source:e:\cs2\projects\test\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+

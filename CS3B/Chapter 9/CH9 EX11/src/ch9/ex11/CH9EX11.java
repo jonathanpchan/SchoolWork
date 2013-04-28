@@ -1,7 +1,3 @@
-/*Name: Jonathan Chan
- *Program: Chapter-9 Exercise-11
- *Description:  This program takes in a number of temperatures and spits out the averages.
- */  
 package ch9.ex11;
 
 import javax.swing.*;
@@ -140,6 +136,7 @@ public class CH9EX11 extends JFrame
     }    
     private class ExitButtonHandler implements ActionListener//code for the exit button handler
     {
+        @Override
         public void actionPerformed(ActionEvent e)//for the button click
         {
             System.exit(0);//shuts down program when exit button is pressed

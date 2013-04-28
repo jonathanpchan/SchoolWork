@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1320335838 source:f:\cs2\projects\savitch\chapter 5\ch-5 ex-6\ch-5 ex-6\main.cpp
+	<iostream>
+	<cstdlib>
+

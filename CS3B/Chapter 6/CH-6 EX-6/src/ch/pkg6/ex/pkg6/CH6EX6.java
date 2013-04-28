@@ -10,11 +10,9 @@
         
 package ch.pkg6.ex.pkg6;
 
-import java.awt.Container;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class CH6EX6 extends JFrame//creating the JFrame
  {
@@ -64,7 +62,6 @@ public class CH6EX6 extends JFrame//creating the JFrame
     
     private class ConvertButtonHandler implements ActionListener//Code for the Convert Button Handler
     {
-        @Override
         public void actionPerformed(ActionEvent e)//for when the button is pressed
         {
             char Ch;//Char to hold each char of the string in the loop

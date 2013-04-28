@@ -1,14 +1,9 @@
-/*Name: Jonathan Chan
- *Program: Chapter-9 Exercise-13
- *Description:  This program creates an array of a class and prints out the data.
- */  
 package ch9ex13;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Locale;
 import java.util.Scanner;
-
 
 public class CH9EX13
 {
@@ -64,16 +59,16 @@ public class CH9EX13
             }
             grade = studentsGrade(test_scores);
         }
-         public void getScores(String firstN, String lastN, double tests[])
-        {
-            first_name = firstN;
-            last_name = lastN;
-            test_scores = new double[5];
-            for(int i=0; i<5; i++)
-            {
-                test_scores[i] = tests[i];
-            }
-        }       
+//         public void getScores(String firstN, String lastN, double tests[])
+//        {
+//            first_name = firstN;
+//            last_name = lastN;
+//            test_scores = new double[5];
+//            for(int i=0; i<5; i++)
+//            {
+//                test_scores[i] = tests[i];
+//            }
+//        }       
         private char studentsGrade(double test_scores[])
         {
             double sum = 0;
@@ -105,6 +100,7 @@ public class CH9EX13
                 return('F');
             }       
         }
+        @Override
         public String toString()
         {
             String str;
@@ -120,5 +116,4 @@ public class CH9EX13
             return str;
         }
     }
-
 }

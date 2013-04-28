@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="500" height="500"
+xmlns="http://www.w3.org/2000/svg">
+<circle cx="130" cy="225" r="75" stroke="black" stroke-width="3" fill="rgb(221, 169, 139)"/>
+<circle cx="370" cy="225" r="75" stroke="black" stroke-width="3" fill="rgb(221, 169, 139)"/>
+<circle cx="249" cy="249" r="175" stroke="black" stroke-width="3" fill="rgb(221, 169, 139)"/>
+<circle cx="175" cy="200" r="25" stroke="black" stroke-width="3" fill="rgb(255, 255, 255)"/>
+<circle cx="325" cy="200" r="25" stroke="black" stroke-width="3" fill="rgb(255, 255, 255)"/>
+<circle cx="175" cy="200" r="10" stroke="rgb(107, 66, 38)" stroke-width="3" fill="rgb(107, 66, 38)"/>
+<circle cx="324" cy="200" r="10" stroke="rgb(107, 66, 38)" stroke-width="3" fill="rgb(107, 66, 38)"/>
+<circle cx="175" cy="200" r="2" stroke="black" stroke-width="3" fill="rgb(0, 0, 0)"/>
+<circle cx="324" cy="200" r="2" stroke="black" stroke-width="3" fill="rgb(0, 0, 0)"/>
+<ellipse cx="250" cy="275" rx="20" ry="35" style="fill:rgb(221,169, 139);stroke:black;stroke-width:2"/>
+<polyline points ="125,150 225,150 225,250 125,250 125,150" style="fill-opacity:0;stroke:black;stroke-width:6"/>
+<polyline points ="275,150 375,150 375,250 275,250 275,150" style="fill-opacity:0;stroke:black;stroke-width:6"/>
+<line x1="225" y1="240" x2="275" y2="240" style="stroke:black;stroke-width:6"/>
+<line x1="100" y1="150" x2="125" y2="200" style="stroke:black;stroke-width:6"/>
+<line x1="400" y1="150" x2="375" y2="200" style="stroke:black;stroke-width:6"/>
+<polyline points ="120,130 180,90 200,100 125,140 120,130" style="fill:rgb(0,0,0);stroke:black;stroke-width:6"/>
+<polyline points ="380,130 320,90 300,100 375,140 380,130" style="fill:rgb(0,0,0);stroke:black;stroke-width:6"/>
+<polyline points ="175,335 325,335 300,370 200,370, 175,335" style="fill:rgb(255,255,255);stroke:rgb(107, 66, 38);stroke-width:2"/>
+</svg>
