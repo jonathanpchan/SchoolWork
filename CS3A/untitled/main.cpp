@@ -35,8 +35,6 @@ void Init(void)
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
 
-  const int window_width = 800,
-            window_height = 600;
 
   float aspect_ratio = ((float)window_height) / window_width;
   glFrustum(.5, -.5, -.5 * aspect_ratio, .5 * aspect_ratio, 1, 50);
