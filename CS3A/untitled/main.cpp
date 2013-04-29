@@ -7,7 +7,8 @@ void Main_Loop(void);
 void Draw_Square(float red, float green, float blue);
 void Draw(void);
 
-float rotate_y = 0,
+float rotate_x = 0,
+      rotate_y = 0,
       rotate_z = 0;
 const float rotations_per_tick = .2;
 
@@ -65,6 +66,11 @@ void Main_Loop(void)
       rotate_y += delta_rotate;
     if (glfwGetKey(GLFW_KEY_RIGHT) == GLFW_PRESS)
       rotate_y -= delta_rotate;
+    if (glfwGetKey(GLFW_KEY_UP) == GLFW_PRESS)
+      rotate_x += delta_rotate;
+    if (glfwGetKey(GLFW_KEY_DOWN) == GLFW_PRESS)
+      rotate_x -= delta_rotate;
+
     // z axis always rotates
     rotate_z += delta_rotate;
 
@@ -101,6 +107,7 @@ void Draw(void)
   // move view back a bit
   glTranslatef(0, 0, -30);
   // apply the current rotation
+  glRotatef(rotate_x, 1, 0, 0);
   glRotatef(rotate_y, 0, 1, 0);
   glRotatef(rotate_z, 0, 0, 1);
   // by repeatedly rotating the view matrix during drawing, the
